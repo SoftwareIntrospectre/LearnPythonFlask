@@ -9,10 +9,6 @@ from datetime import datetime
 # references this file
 app = Flask(__name__)
 
-
-#!!! 7/27/2021 --> resume here: https://www.youtube.com/watch?v=Z1RJmh_OqeA&t=2044s
-    # configure on Heroku and make it run
-
 # "///" is a relative path, "////" is an absolute path. Chose relative path this time so I don't have to provide exact location; just project location.
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
